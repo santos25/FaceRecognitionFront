@@ -51,7 +51,7 @@ class App extends React.Component {
       leftCol: data.left_col * Number(imageUrl.width)
     }
 
-    fetch('http://apifacerecognition.herokuapp.com/image', {
+    fetch('https://apifacerecognition.herokuapp.com/image', {
       method: 'PUT',
       headers: {
         'Content-Type': 'application/json'
@@ -72,7 +72,7 @@ class App extends React.Component {
 
   onSubmitDetect = () => {
     this.setState({ imageUrl: this.state.inputImage })
-    fetch('http://apifacerecognition.herokuapp.com/imageRecognition', {
+    fetch('https://apifacerecognition.herokuapp.com/imageRecognition', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json'

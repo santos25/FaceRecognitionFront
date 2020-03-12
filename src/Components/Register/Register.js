@@ -29,7 +29,7 @@ class Register extends React.Component {
             'password': this.state.inputPassword
         }
 
-        fetch('http://apifacerecognition.herokuapp.com/register', {
+        fetch('https://apifacerecognition.herokuapp.com/register', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'
